@@ -27,8 +27,19 @@
 			display: flex;
 			-webkit-justify-content: space-around;
 			        justify-content: space-around;
-			font:$f-bold 16px $font;
+			font:$f-bold 16px/34px $font;
 			text-transform: uppercase;
+			
+			.menu__items{
+				
+				&:hover{
+					margin-top: -3px;
+					border-top: 3px solid $header-hover;
+				}
+				&::first-child{
+					
+				}
+			}
 		}
 	}
 	&__body{
