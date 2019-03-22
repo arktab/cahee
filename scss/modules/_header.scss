@@ -1,0 +1,75 @@
+.header{
+	width: 100%;
+	max-height: 100vh;
+	min-height: 950px;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	background: url(../images/header-bg.jpg) no-repeat top center;
+	background-size: cover;
+	
+	&__logo{
+		height: 150px;
+		display: flex;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+		-webkit-align-items: center;
+		        align-items: center;
+
+		.logo__text{
+			font: 50px $font-logo;
+		}
+
+		.nav__menu{
+			display: flex;
+			-webkit-justify-content: space-around;
+			        justify-content: space-around;
+			font:$f-bold 16px $font;
+			text-transform: uppercase;
+		}
+	}
+	&__body{
+		display: flex;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-justify-content: flex-start;
+		        justify-content: flex-start;
+		    
+		.text__head{
+			font: $f-heavy 58px $font;
+		}
+		
+		.text{
+			margin: 20px 0;
+			font: $f-light 18px $font;
+		}
+
+		.text__button{
+			width: 200px;
+			height: 60px;
+			border: none;
+	  		color: white;
+	  		text-align: center;
+	  		text-decoration: none;
+			background: $orange;
+			font: $f-light 22px $font;
+			text-transform: uppercase;
+			margin-left: 15px;
+			-webkit-box-shadow: 1px 5px 20px -4px rgba(0,0,0,1);
+			-moz-box-shadow: 1px 5px 20px -4px rgba(0,0,0,1);
+			box-shadow: 1px 5px 20px -4px rgba(0,0,0,1);
+		}
+	}
+	&__footer{
+		
+		.footer__icon{
+			width: 30px;
+			height: 40px;
+			margin: 0 auto 70px;
+		}
+	}
+}

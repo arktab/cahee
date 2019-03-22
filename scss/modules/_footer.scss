@@ -1,0 +1,27 @@
+.footer{
+	width: 100%;
+	height: 90px;
+	background: $footer-bg;
+	
+	.footer__wraper{
+		text-align: center;
+		-webkit-align-content: center;
+		        align-content: center;
+		    font-size: 15px;
+		   
+		    color: $footer-text;
+		    
+		.footer__copyright{
+			 padding: 40px 0 0 ;
+		}
+
+		.footer__logo{
+			padding: 25px 0 0 ;
+			font: 25px $font-logo;
+		}
+
+		.footer__desc{
+			padding: 40px 0 0 ;
+		}
+	}
+}
