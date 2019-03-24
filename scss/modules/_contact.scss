@@ -6,8 +6,9 @@
 	background-size:110%;
 	
 	&__header{
-		-webkit-justify-content: center;
-		        justify-content: center;
+		//justify-self:center;
+		 // -webkit-justify-content: center;
+		 //         justify-content: center;
 		margin: 0 auto;
 	}
 		&__bold{
@@ -18,7 +19,7 @@
 		}
 
 		&__text{
-			font: $f-light 17px $font;
+			//font: $f-light 17px $font;
 			text-align: center;
 			padding-bottom: 40px;
 		}
@@ -26,7 +27,7 @@
 	.main__form{
 
 		.field{
-			
+
 			.field__item{
 				width: 500px;
 				height: 50px;
@@ -53,10 +54,12 @@
 		}
 	}
 	.address{
-
+		
 		&__bold{
-			font-weight: $f-bold;
+			font: $f-bold 18px $font;
 			padding-bottom: 10px;
+			text-transform: uppercase;
+			
 			.address_text{
 				font-weight:$f-light;
 				line-height: 25px;
