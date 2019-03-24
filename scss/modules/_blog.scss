@@ -3,40 +3,50 @@
 	background-color: $blog-bg;
 	width: 100%;
 	height: 865px;
-	position: relative;
-	z-index:-2;
-	padding: 100px 165px 0;
-
+	
+	.container{	
+	padding: 100px 0 0;
 	-webkit-align-items: center;
 	        align-items: center;
-	&__header{
+	}
+
+
+	.blog__header{
 		text-align: center;
-		width: 570px;
 		font: $f-bold 90px $font;
 		color: $white;
-		margin: 0 auto;
+		display: flex;
+		-webkit-justify-content: center;
+		        justify-content: center;
 	}
-	&__text{
+	.blog__bold{
+		text-align: center;
+	}
+
+	.blog__text{
 		margin: 50px 0 ;
 		font: $f-light 18px $font;
+		color: $white;
 	}
-	&__grid{
+
+	.blog__grid{
 		display: flex;
 		-webkit-flex-direction: row;
 		    -ms-flex-direction: row;
 		        flex-direction: row;
--webkit-justify-content: space-between;
+		-webkit-justify-content: space-between;
         justify-content: space-between;
 		-webkit-align-items: center;
 		        align-items: center;
 		margin-bottom: 50px;
+		
 		.tile{
-			//width: 24.6%;
+			width: 370px;
 			height: 310px;
-			margin: 0 15px;
+			margin: 0 20px;
 			padding: 20px;
-			position: relative;
 			overflow: hidden;
+			cursor: pointer;
 			-webkit-box-shadow: 1px 5px 20px -4px rgba(0,0,0,1);
 			-moz-box-shadow: 1px 5px 20px -4px rgba(0,0,0,1);
 			box-shadow: 1px 5px 20px -4px rgba(0,0,0,1);
@@ -46,17 +56,15 @@
 			        flex-direction: column;
 			-webkit-justify-content: space-between;
 			        justify-content: space-between;
-			cursor: pointer;
 			
-			&:before{
-				content: '';
-				@include pos($t:0,$l:0);
+			
+
+			&:hover {
+				
+				//background-color: rgba(176,124,247, .8);
 				
 			}
-			&::hover &::before{
-				background-color: rgba(176,124,247, .3);
-				z-index: 2;
-			}
+
 			&__date{
 				margin: 20px;
 				width: 62px;
@@ -68,34 +76,43 @@
 				background-color: rgba(87, 92, 102, 0.4);
 				-webkit-border-radius: 5px;
 				        border-radius: 5px;
+				-webkit-background-size: cover;
+				     -o-background-size: cover;
+				        background-size: cover;
+				
 				.date__text{
 					font-size: 21px;
+					font-weight: $f-bold;
 				}
 			}
+
 			&__header{
-				font-weight: $f-bold;
-				font-size: 22px;
+				font: $f-bold 20px $font;
 				color: $white;
 				
 			}
+
 			&__info{
 				padding-top: 20px;
 				font: $f-light 14px $font;
 			}
-				.tile__bg{
-				 //width: 100%;
-				 //min-height: 100%;
-				 
-				 @include pos($t:0, $l:0, $r:0, $b:0, $z:-1);
-				}
+			
+			&:nth-child(1){
+				background: url('../images/blog_img/1.jpg') no-repeat center center;
+			}
+			&:nth-child(2){
+				background: url('../images/blog_img/2.jpg') no-repeat center center;
+			}
+			&:nth-child(3){
+				background: url('../images/blog_img/3.jpg') no-repeat center center;
+			}
 		}
 	}
 	.button__wrap{
-		
-		
+		width: 100%;
+		-webkit-justify-content: center;
+		        justify-content: center;
 		.blog__button{
-		//width: 200px;
-		margin: 0 auto;
 		height: 55px;
 		background: $blog-bt;
 		color: $white;

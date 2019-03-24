@@ -1,11 +1,15 @@
 .aboutus{
-	width: 100%;
-	height: 700px;
+	max-width: 100vh;
+	min-width: 100%;
 	background: $aboutus-bg;
 	-webkit-box-shadow: inset 0px 0px 150px 50px rgba(21,179,180,1);
     -moz-box-shadow: inset 0px 0px 150px 50px rgba(21,179,180,1);
     box-shadow: inset 0px 0px 150px 50px rgba(21,179,180,1);
 	
+	.container{
+		height: 700px;
+	}
+
 	.aboutus__img{
 		display: flex;
 		-webkit-justify-content: center;
@@ -17,7 +21,7 @@
 		}
 	}
 
-	.desc{
+	.aboutus__desc{
 		display: flex;
 		-webkit-flex-direction: column;
 		    -ms-flex-direction: column;
@@ -28,13 +32,11 @@
 		        align-items: flex-start;
 		    
 		
-		&__header{
+		.aboutus__header{
 			font: $f-bold 80px $font;
 			color: $light-text;
 		}
-		&__article{
-			font: $f-light 18px $font;
-			line-height: 27px;
+		.aboutus__text{
 			color: $light-text;
 			width: 80%;
 		}

@@ -21,33 +21,41 @@
     <image width="24" height="40" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAoCAQAAABOBPLeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCwEUDyB5eQNYAAACAklEQVQ4y+3VMUiUYRzH8Y+vnjampiCcECKheCQIbZJSVF5jNEiBSk02OOnQJLU0ZEMOFUFimRDU4tJpUQgtQYSEhg7ioiWpdRItnmIN6nWXd56NQb/hD+/z//7e5/8+zwu/vCNSFKhx2gkRpfhqymsvzNj8jeSlGOp1andAutYMuuvDbsNlvSqx4rlpqzioVlQZ5l3zYAsr2Mavuq7AqpuemLe+vRpSqVWPSveUuwH5pXDJLSHvnfNMPGXiTXFvjDom7LjPJrZGiogJm3DeXPLNUcSSO1V5qsGCqKlAoS5hce1JnA4jRnQkn+e0iwvrUhio1oY+kykn05hStzSlD22qA2cUWTacdpQbKXVHw5YVaQk0I2Yxrfkzpe5oUQzNgQimJeRSwjQigTLEc+K2qUOB0K5ps2kDoSBja2s1L3vrT61B8trSVJDRMKDJpoH9G96p/7sdssDZv2EP/Tf8s4Z12X+QdBVgPbCC4n0ZirESmEStwpx4oRpMBcbRoiKnocJZjAfGrCl3MafhgjJrRgOzHqFbZE+8TjeGzAYS+i0o9lBVVrzKkBILbkvkl7Lku6iwRm99yYAf9ViDdT3GdvJhwoYmYa3yffIjmRAhh3W6r8qGXv1kiqwlMTO+oUSNqHJpkZUeild07LqRhEF3MoUiBGqdclKdMiz76JWXplNj9xcI0YsrPw+qKwAAAABJRU5ErkJggg=="></image>
   </symbol>
 </svg>
+<svg width="0" height="0" viewBox="0 0 130 60 class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127 52" id="logo">
+    <text x="118.999" y="47" font-size="50" fill="#262626" text-anchor="end" font-family="Pacifico">
+      <tspan x="118.999">Cahee</tspan>
+    </text>
+  </symbol>
+</svg>
 <!-- SVG END -->
 
-<div class="container container-fluid">
-<header class=" header ">
+
+<header class="header" id="home">
+	<section class="container container-fluid">
   <div class="row header__logo">
 	    <div class="col-md-2">
-	    	<div class="logo__text">
-	    		Cahee
-	    	</div>
+	    	<a class="logo__link" href="#">
+	    		<img class="logo__img" src="images/logo.png" alt="logo">
+	    	</a>
 	    </div>
 	    <div class="col-md-6">
 	      	<ul class="nav__menu">
-	      		<li class="menu__items"><a class="menu__items--link">Home</a></li>
-	      		<li class="menu__items"><a class="menu__items--link">About</a></li>
-	      		<li class="menu__items"><a class="menu__items--link">Services</a></li>
-	      		<li class="menu__items"><a class="menu__items--link">Gallery</a></li>
-	      		<li class="menu__items"><a class="menu__items--link">Blog</a></li>
-	      		<li class="menu__items"><a class="menu__items--link">Contact</a></li>
+	      		<li class="menu"><a class="menu__link" href="#home">Home</a></li>
+	      		<li class="menu"><a class="menu__link" href="#aboutus">About</a></li>
+	      		<li class="menu"><a class="menu__link" href="#services">Services</a></li>
+	      		<li class="menu"><a class="menu__link" href="#gallery">Gallery</a></li>
+	      		<li class="menu"><a class="menu__link" href="#blog">Blog</a></li>
+	      		<li class="menu"><a class="menu__link" href="#contact">Contact</a></li>
 	      	</ul>
 	   </div>
    </div>
    <div class="row header__body">
-	    <div class="col-md-3 text__head">Fresh Life</div>
-	    <div class="col-md-4 text">
+	    <div class="col-md-3 header__head">Fresh Life</div>
+	    <div class="col-md-4 header__text">
 	    	Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
 	    </div>
-	    <button class="col-md-2 text__button" type="submit" name="button">Get free now</button>
+	    <button class="col-md-2 header__button" type="submit" name="button">Get free now</button>
 
    </div>
    <div class="row header__footer">
@@ -55,143 +63,161 @@
 		    <use xlink:href="#scroll"></use>
 		</svg>
    </div>
+   </section>
 </header>
-<div class="aboutus">
-	<div class="row">
-		<div class="aboutus__img col-md-7">
-			<img class="aboutus__img--img" src="images/aboutus-bg.png">
-		</div>
-		<div class="desc col-md-5">
-			<div class="desc__header ">About Us</div>
-			<div class="desc__article ">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.<br><br>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+<div class="aboutus" id="aboutus">
+	<section class="container container-fluid">
+		<div class="row">
+			<div class="aboutus__img col-md-7">
+				<img class="aboutus__img--img" src="images/aboutus-bg.png">
 			</div>
-		</div>
-	</div>
-</div>
-<div class="services ">
-	<div class="row">
-	<div class="skills__nav col-md-5">
-		<button class="text__button" type="submit" name="button">Online Shoping<i class="icon-cart button__icon"></i></button>
-		<button class="text__button" type="submit" name="button">Quality Product<i class="icon-hand button__icon"></i></button>
-		<button class="text__button" type="submit" name="button">Domestic & Internstion<br> Delivery<i class="icon-planet button__icon"></i></button>
-		<button class="text__button" type="submit" name="button">Well Organized<i class="icon-carrot button__icon"></i></button>
-	</div>
-	<div class="skills__logo col-md-7">
-		<div class="logo__header">Our Services</div>
-		<div class="logo__bg">
-			<img class="logo__bg--img" src="images/services-bg.png" alt="">
-		</div>
-	</div>
-	</div>
-</div>
-<div class=" gallery ">
-	<div class="gallery__header">Gallery
-		<div class="gallery__text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-		</div>
-	</div>
-	<div class="gallery__grid">
-			<div class="row row__top">
-				<div class="grid__tile col-md-8"><img src="images/gallery_img/1.jpg" alt="first image" class="tile"></div>
-				<div class="col-md-4">
-					<div class="row row-mini"> <div class="grid__tile col-md-12"><img src="images/gallery_img/2.jpg" alt="second image" class="tile"></div>
-					</div>
-					<div class="row row-mini"><div class="grid__tile col-md-12"><img src="images/gallery_img/3.jpg" alt="third image" class="tile">
-					</div></div>
+			<div class="aboutus__desc col-md-5">
+				<div class="aboutus__header ">About Us</div>
+				<div class="aboutus__text">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.<br><br>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
 				</div>
 			</div>
-			<div class="row row__bootom">
-				<div class="grid__tile col-md-6"><img src="images/gallery_img/4.jpg" alt="fourth image" class="tile"></div>
-				<div class="grid__tile col-md-6"><img src="images/gallery_img/5.jpg" alt="fifth image" class="tile"></div>
-			</div>
-			
-	</div>
-	<div class="row button__wrap">
-		<button class="gallery__button col-md-2" type="submit col-md-2" name="button">View More</button>
-	</div>
+		</div>
+	</section>
 </div>
-<div class="subccribe">
-	<div class="subccribe__wrapper">
-		<div class="subscribe__header row col-md-6">Subscribe To Us
-		<div class="subscribe__text ">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div></div>
-		<form action="#" class="main__form row ">
-				
-			<input type="email" name="email" class="field__item col-md-6" id="email" placeholder="Yuor email address..." required>
-			
-			<button type="submit" class="button col-md-2 " name="button">subccribe</button>
-		</form>
-	</div>
-</div>
-<div class="blog">
+<div class="services" id="services">
+	<section class="container container-fluid">
 		<div class="row">
-		<div class="blog__header col-md-6">Blog
-			<div class="blog__text ">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+			<div class="services__buttons col-md-5">
+				<div class="button__wrap">
+					<button class="button__text" type="submit" name="button">Online Shoping</button><i class="icon-cart button__icon"></i>
+				</div>
+				<div class="button__wrap">
+					<button class="button__text" type="submit" name="button">Quality Product</button><i class="icon-hand button__icon"></i>
+				</div>
+				<div class="button__wrap">
+					<button class="button__text" type="submit" name="button">Domestic & Internstion<br> Delivery</button><i class="icon-planet button__icon"></i>
+				</div>
+				<div class="button__wrap">
+					<button class="button__text" type="submit" name="button">Well Organized</button><i class="icon-carrot button__icon"></i>
+				</div>
+			</div>
+			<div class="skills__logo col-md-7">
+				<div class="logo__header">Our Services</div>
+				<div class="logo__bg">
+					<img class="logo__bg--img" src="images/services-bg.png" alt="">
+				</div>
 			</div>
 		</div>
+	</section>
+</div>
+<div class="gallery" id="gallery">
+	<section class="container container-fluid">
+		<div class="gallery__header">Gallery
+			<div class="gallery__text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</div>
+		</div>
+		<div class="gallery__grid">
+				<div class="row row__top">
+					<div class="grid__tile col-md-8"><img src="images/gallery_img/1.jpg" alt="first image" class="tile"></div>
+					<div class="col-md-4">
+						<div class="row row-mini"> <div class="grid__tile col-md-12"><img src="images/gallery_img/2.jpg" alt="second image" class="tile"></div>
+						</div>
+						<div class="row row-mini"><div class="grid__tile col-md-12"><img src="images/gallery_img/3.jpg" alt="third image" class="tile">
+						</div></div>
+					</div>
+				</div>
+				<div class="row row__bootom">
+					<div class="grid__tile col-md-6"><img src="images/gallery_img/4.jpg" alt="fourth image" class="tile"></div>
+					<div class="grid__tile col-md-6"><img src="images/gallery_img/5.jpg" alt="fifth image" class="tile"></div>
+				</div>
+				
+		</div>
+		<div class="row button__wrap">
+			<button class="gallery__button col-md-2" type="submit col-md-2" name="button">View More</button>
+		</div>
+	</section>
+</div>
+<div class="subccribe" id="subccribe">
+	<section class="container container-fluid">
+		<div class="subccribe__wrapper">
+			<div class="subscribe__header row col-md-6">Subscribe To Us
+			<div class="subscribe__text ">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div></div>
+			<form action="#" class="main__form row ">
+					
+				<input type="email" name="email" class="field__item col-md-6" id="email" placeholder="Yuor email address..." required>
+				
+				<button type="submit" class="button col-md-2 " name="button">subccribe</button>
+			</form>
+		</div>
+	</section>
+</div>
+<div class="blog" id="blog">
+	<section class="container container-fluid">
+		<div class="row blog__header col-md-6">
+			<div class="blog__bold">Blog</div>
+			<div class="blog__text ">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+			</div>
 		</div>
 		<div class="blog__grid">
 				<div class="tile">
 					<div class="tile__date">20<p class="date__text">Nov</p></div>
 					<div class="tile__header">Green Smoothies: Too Much of a Good Thing?
 					<div class="tile__info">By Auskteez - 2 hours ago</div></div>
-					<img class="tile__bg" src="images/blog_img/1.jpg"></img>
+				
 				</div>
 				<div class="tile">
 					<div class="tile__date">14<p class="date__text">Nov</p></div>
 					<div class="tile__header">Growing Food and a “Thirst” for Innovation
 					<div class="tile__info">By Auskteez - 3 hours ago</div></div>
-					<img class="tile__bg" src="images/blog_img/2.jpg"></img>
+					
 				</div>
 				<div class="tile">
 					<div class="tile__date">10<p class="date__text">Nov</p></div>
 					<div class="tile__header">Pesticides & Food: What You Need to Know
 					<div class="tile__info">By Auskteez - 6 hours ago</div></div>
-					<img class="tile__bg" src="images/blog_img/3.jpg"></img>
+					
 				</div>
 		</div>
 		<div class="row button__wrap">
 			<button type="submit" class="blog__button col-md-2" name="button">View More</button>
 		</div>
+	</section>
 </div>
-
-
-<div class="contact">
-		<div class="contact__header row col-md-4">
-			<div class="contact__bold">Contact</div> 
-			<div class="contact__text">For new projects, ideas, business or anything you'd like to discuss, contact with me!
+<div class="contact" id="contact">
+	<section class="container container-fluid">
+			<div class="contact__header row col-md-4">
+				<div class="contact__bold">Contact</div> 
+				<div class="contact__text">For new projects, ideas, business or anything you'd like to discuss, contact with me!
+				</div>
+			</div>
+		<div class="row">
+			<div class="form__wrap col-md-7">
+				<form action="#" class="main__form">
+						<div class="field">
+								<input type="text" name="username" class="field__item field__item-name" id="name" placeholder="Auskteez Tranz" selected>
+						</div>
+						<div class="field">
+								<input type="email" name="email" class="field__item" id="email" placeholder="Your Email...">
+						</div>
+						<div class="field">
+								<input type="phone" name="phone" class="field__item" id="email" placeholder="Your phone number...">
+						</div>
+						<div class="field">
+								<input type="textarea" name="textarea" class="field__item field__item--textarea" id="textarea" placeholder="Your messge...">
+						</div>
+				</form>
+			</div>
+			<div class="address col-md-5">
+				<div class="address__bold">
+					Address
+					<div class="address_text">123 City name, Street, City, Country</div>
+				</div>
+				<div class="address__bold">
+					Email
+					<div class="address_text">cahee@domain.com</div>
+				</div>
+				<div class="address__bold">
+					Phone
+					<div class="address_text">+012 345 6789</div>
+				</div>
 			</div>
 		</div>
-	<div class="row">
-		<div class="form__wrap col-md-7">
-			<form action="#" class="main__form">
-					<div class="field">
-							<input type="text" name="username" class="field__item field__item-name" id="name" placeholder="Auskteez Tranz" selected>
-					</div>
-					<div class="field">
-							<input type="email" name="email" class="field__item" id="email" placeholder="Your Email...">
-					</div>
-					<div class="field">
-							<input type="phone" name="phone" class="field__item" id="email" placeholder="Your phone number...">
-					</div>
-					<div class="field">
-							<input type="textarea" name="textarea" class="field__item field__item--textarea" id="textarea" placeholder="Your messge...">
-					</div>
-			</form>
-		</div>
-		<div class="address col-md-5">
-			<div class="address__bold">
-				Address
-				<div class="address_text">123 City name, Street, City, Country</div>
-			</div>
-			<div class="address__bold">
-				Email
-				<div class="address_text">cahee@domain.com</div>
-			</div>
-			<div class="address__bold">
-				Phone
-				<div class="address_text">+012 345 6789</div>
-			</div>
-		</div>
-	</div>
+	</section>
 </div>
 
 <div class=" footer">

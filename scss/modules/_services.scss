@@ -4,7 +4,10 @@
 	background: $services-bg;
 	font-family: $font;
 	
-	.skills__nav{
+	.container{
+		
+	}
+	.services__buttons{
 		height: 460px;
 		display: flex;
 	-webkit-flex-direction: column;
@@ -15,26 +18,36 @@
 	-webkit-align-items: flex-end;
 	        align-items: flex-end;
 		margin: 180px 0 150px;
-		    
-	 	.text__button{
-		    width: 400px;
-		    height: 100px;
-		    font: $f-bold 22px $font;
-		    color: $dark-text;
-		    padding: 0 2.5% 0 10%;
-		    display: flex;
-		    -webkit-justify-content: space-between;
-		            justify-content: space-between;
-		    -webkit-align-items: center;
-		            align-items: center;
+		 
+
+		.button__wrap{
+			background: $white;
+			width: 400px;
 			-webkit-box-shadow: -2px 8px 41px -7px rgba(0,0,0,1);
-			-moz-box-shadow: -2px 8px 41px -7px rgba(0,0,0,1);
-			box-shadow: -2px 8px 41px -7px rgba(0,0,0,1);
-		    
-		    .button__icon{
-		    	font-size: 50px;
-		    }   
-		}
+				-moz-box-shadow: -2px 8px 41px -7px rgba(0,0,0,1);
+				box-shadow: -2px 8px 41px -7px rgba(0,0,0,1);
+			display: flex;
+			-webkit-flex-direction: row;
+			    -ms-flex-direction: row;
+			        flex-direction: row;
+		 	.button__text{
+		 		background: $white;
+			    width: 300px;
+			    height: 100px;
+			    font: $f-bold 20px $font;
+			    color: $dark-text;
+			    padding: 0 2.5% 0 10%;
+			    }
+			.button__icon{
+	            display: block;
+	            width: 98px;
+	            height: 100px;
+	            padding-left: 22px;
+	            border-left: 2px solid #9d9d9d;
+			    font-size: 50px;
+	            line-height: 100px;   
+			}
+		} 
 	}
 	.skills__logo{
 		display: flex;

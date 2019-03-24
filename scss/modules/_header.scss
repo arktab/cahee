@@ -1,36 +1,33 @@
 .header{
 	width: 100%;
-	max-height: 100vh;
-	min-height: 950px;
-	display: flex;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-justify-content: space-between;
-	        justify-content: space-between;
 	background: url(../images/header-bg.jpg) no-repeat top center;
-	background-size: cover;
-	
+	background-size: 80%;
+	.container{
+		max-height: 100vh;
+		min-height: 950px;
+	}
 	&__logo{
 		height: 150px;
-		display: flex;
 		-webkit-justify-content: space-between;
 		        justify-content: space-between;
 		-webkit-align-items: center;
 		        align-items: center;
 
-		.logo__text{
-			font: 50px $font-logo;
+		.logo__link{
+			
+			&__img{
+				 width: 130px;
+				 height: 60px;
+			}
 		}
 
 		.nav__menu{
 			display: flex;
 			-webkit-justify-content: space-around;
 			        justify-content: space-around;
-			font:$f-bold 16px/34px $font;
-			text-transform: uppercase;
 			
-			.menu__items{
+			
+			.menu{
 				
 				&:hover{
 					margin-top: -3px;
@@ -38,6 +35,12 @@
 				}
 				&::first-child{
 					
+				}
+				&__link{
+					
+					font:$f-bold 16px/34px $font;
+					color: $dark-text;
+					text-transform: uppercase;
 				}
 			}
 		}
@@ -50,26 +53,26 @@
 		-webkit-justify-content: flex-start;
 		        justify-content: flex-start;
 		    
-		.text__head{
-			font: $f-heavy 58px $font;
+		.header__head{
+			font: $f-heavy 56px $font;
 		}
 		
-		.text{
-			margin: 20px 0;
-			font: $f-light 18px $font;
+		.header__text{
+			margin: 20px 0;	
 		}
 
-		.text__button{
+		.header__button{
 			width: 200px;
 			height: 60px;
-			border: none;
 	  		color: white;
-	  		text-align: center;
-	  		text-decoration: none;
 			background: $orange;
 			font: $f-light 22px $font;
-			text-transform: uppercase;
 			margin-left: 15px;
+			
+			text-align: center;
+			border: none;
+			text-decoration: none;
+			text-transform: uppercase;
 			-webkit-box-shadow: 1px 5px 20px -4px rgba(0,0,0,1);
 			-moz-box-shadow: 1px 5px 20px -4px rgba(0,0,0,1);
 			box-shadow: 1px 5px 20px -4px rgba(0,0,0,1);
@@ -80,7 +83,8 @@
 		.footer__icon{
 			width: 30px;
 			height: 40px;
-			margin: 0 auto 70px;
+			justify-self: center;
+			margin-bottom: 70px;
 		}
 	}
 }
