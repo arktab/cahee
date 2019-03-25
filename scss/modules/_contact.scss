@@ -3,7 +3,7 @@
 	height: 865px;
 	padding: 75px 165px 0;
 	background: url('../images/contact-bg.jpg') no-repeat center center;
-	background-size:110%;
+	background-size:cover;
 	
 	&__header{
 		//justify-self:center;
@@ -27,19 +27,20 @@
 	.main__form{
 
 		.field{
-
+			position: relative;
+			
 			.field__item{
 				width: 500px;
 				height: 50px;
 				padding-left: 20px;
 				margin-bottom: 20px;
 				background: rgba(0,196,196, .5);
+				font: $f-bold 18px $font;
 				
 				&::-webkit-input-placeholder{
 					color: #FFF;
 					font: 16px $font;
-					vertical-align: text-top;
-					
+					vertical-align: text-top;		
 				}
 
 				&:hover{
@@ -48,8 +49,21 @@
 					background: rgba(0,196,196, 1);
 				}
 			}
+
 			.field__item--textarea{
+				padding: 18px;
 				height: 250px;
+				resize: none;	
+			}
+
+			.field__placeholder{
+				font: 16px $font;
+				color: #FFF;
+				@include pos($t:5%, $l:20px);
+			}
+
+			.field__item--textarea:focus .field__placeholder{
+				@include pos($t:-10px, $l:-10px);
 			}
 		}
 	}

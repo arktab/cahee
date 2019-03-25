@@ -5,20 +5,24 @@
 	height: 865px;
 	
 	.container{	
-	padding: 100px 0 0;
+	padding: 75px 0 0;
 	-webkit-align-items: center;
 	        align-items: center;
 	}
 
 
 	.blog__header{
+		width: 100%;
 		text-align: center;
 		font: $f-bold 90px $font;
 		color: $white;
 		display: flex;
-		-webkit-justify-content: center;
-		        justify-content: center;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		margin: 0 auto;
 	}
+
 	.blog__bold{
 		text-align: center;
 	}
@@ -30,40 +34,27 @@
 	}
 
 	.blog__grid{
-		display: flex;
-		-webkit-flex-direction: row;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
-		-webkit-justify-content: space-between;
-        justify-content: space-between;
-		-webkit-align-items: center;
-		        align-items: center;
+		width: 100%;
 		margin-bottom: 50px;
+		display: flex;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
 		
 		.tile{
 			width: 370px;
 			height: 310px;
-			margin: 0 20px;
 			padding: 20px;
 			overflow: hidden;
 			cursor: pointer;
-			-webkit-box-shadow: 1px 5px 20px -4px rgba(0,0,0,1);
-			-moz-box-shadow: 1px 5px 20px -4px rgba(0,0,0,1);
-			box-shadow: 1px 5px 20px -4px rgba(0,0,0,1);
+			margin: 0 15px;
 			display: flex;
 			-webkit-flex-direction: column;
 			    -ms-flex-direction: column;
 			        flex-direction: column;
 			-webkit-justify-content: space-between;
 			        justify-content: space-between;
+			        background-size: contain;
 			
-			
-
-			&:hover {
-				
-				//background-color: rgba(176,124,247, .8);
-				
-			}
 
 			&__date{
 				margin: 20px;
@@ -73,13 +64,10 @@
 				text-transform: uppercase;
 				text-align: center;
 				color: $white;
-				background-color: rgba(87, 92, 102, 0.4);
 				-webkit-border-radius: 5px;
 				        border-radius: 5px;
-				-webkit-background-size: cover;
-				     -o-background-size: cover;
-				        background-size: cover;
-				
+				margin: 0 15px;
+
 				.date__text{
 					font-size: 21px;
 					font-weight: $f-bold;
@@ -91,7 +79,7 @@
 				color: $white;
 				
 			}
-
+ 
 			&__info{
 				padding-top: 20px;
 				font: $f-light 14px $font;
@@ -108,10 +96,12 @@
 			}
 		}
 	}
+
 	.button__wrap{
 		width: 100%;
 		-webkit-justify-content: center;
 		        justify-content: center;
+		    
 		.blog__button{
 		height: 55px;
 		background: $blog-bt;

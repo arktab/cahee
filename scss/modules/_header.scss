@@ -35,9 +35,7 @@
 					margin-top: -3px;
 					border-top: 3px solid $header-hover;
 				}
-				&::first-child{
-					
-				}
+				
 				&__link{
 					
 					font:$f-bold 16px/34px $font;
@@ -47,6 +45,7 @@
 			}
 		}
 	}
+	
 	&__body{
 		display: flex;
 		-webkit-flex-direction: column;
@@ -68,7 +67,7 @@
 			height: 60px;
 	  		color: white;
 			background: $orange;
-			font: $f-light 22px $font;
+			font: $f-light 18px $font;
 			margin-left: 15px;
 			
 			text-align: center;
@@ -80,6 +79,7 @@
 			box-shadow: 1px 5px 20px -4px rgba(0,0,0,1);
 		}
 	}
+
 	&__footer{
 		position: relative;
 		     height: 100px;
@@ -87,12 +87,11 @@
 		.footer__link{
 			@include pos($b:100px, $r:50%);
 			position: fixed;
-			//z-index: 2;
+			z-index: 5;
 		}
 
 		.footer__icon{
-			
-			width: 30px; 
+			width: 24px; 
 			height: 40px;
 
 		}

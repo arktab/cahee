@@ -7,12 +7,15 @@
 	
 
 	&__header{
-		margin: 0 auto 50px;
+		//margin: 0 auto 50px;
+		
+	
+	}
+	
+	&__bold{
 		text-align: center;
 		font: $f-bold 90px $font;
 		color: $dark-text;
-	
-		width: 575px;
 	}
 
 	&__text{
