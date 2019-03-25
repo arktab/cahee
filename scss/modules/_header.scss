@@ -1,10 +1,12 @@
 .header{
 	width: 100%;
 	background: url(../images/header-bg.jpg) no-repeat top center;
-	background-size: 80%;
+	background-size: cover;
+	
 	.container{
 		max-height: 100vh;
 		min-height: 950px;
+		
 	}
 	&__logo{
 		height: 150px;
@@ -79,12 +81,20 @@
 		}
 	}
 	&__footer{
-		
+		position: relative;
+		     height: 100px;
+		     
+		.footer__link{
+			@include pos($b:100px, $r:50%);
+			position: fixed;
+			//z-index: 2;
+		}
+
 		.footer__icon{
-			width: 30px;
+			
+			width: 30px; 
 			height: 40px;
-			justify-self: center;
-			margin-bottom: 70px;
+
 		}
 	}
 }
