@@ -85,7 +85,8 @@
 		     height: 100px;
 		     
 		.footer__link{
-			@include pos($b:100px, $r:50%);
+			@include pos($b:100px, $r:49.5%);
+			//@include align($vert: true, $hor: false);
 			position: fixed;
 			z-index: 5;
 		}
